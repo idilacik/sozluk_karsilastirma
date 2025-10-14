@@ -1,0 +1,94 @@
+body {
+    font-family: "Cascadia Code";
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #212529;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #EFF5D2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+table {
+     flex: 1;
+  font-family: "Cascadia Code";
+  border-collapse: collapse;
+  width: 100%;
+    table-layout: fixed;
+}
+.containerh2 {
+    text-align: center;
+    color: #212529;
+}
+
+td, th {
+    width: 50%;
+  border: 4px solid #556B2F;
+  text-align: left;
+    vertical-align: top;
+  padding: 8px;
+    word-wrap: break-word;
+}
+
+.liste {
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 0;
+    display: block;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #C6D870;
+}
+
+.containerbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 10px;
+}
+h1 {
+    color: #8FA31E;
+    text-align: center;
+    padding: 20px;
+    background-color: #556B2F;
+    border-bottom: 3px solid #556B2F;
+}
+
+.title1 {
+    text-align: center;
+}
+.input1 {
+    border:0;
+    outline:0;
+}
+.input1:focus {background: #e7e7e7;}
+}
+
+.button1 {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button1:hover {
+  background: #e7e7e7;
+}
+.containerb1 {
+    columns: 1;
+    align-items: center;
+}
+.hizalama {
+    background-color: #8FA31E;
+}
