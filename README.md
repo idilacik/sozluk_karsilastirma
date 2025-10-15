@@ -3,7 +3,7 @@
 
 
 
-&nbsp;Bu proje 2 farklı sözlük sitesinden ( <a href="https://sozluk.gov.tr/">TDK Sözlüğü</ a> ve <a href="https://lugatim.com/">Kubbealtı Lugatı </ a>) <br>aynı kelimenin anlamlarını karşılaştırmayı sağlıyor. Özellikle dilbilimciler, araştırmacılar ve öğrencilerin kelimelerin <br>anlamlarındaki varyasyonları inceleyip analiz etmelerine yardımcı olacak.
+&nbsp;Bu proje 2 farklı sözlük sitesinden (<a href="https://sozluk.gov.tr/">TDK Sözlüğü</a> ve <a href="https://lugatim.com/">Kubbealtı Lugatı</a>) <br>aynı kelimenin anlamlarını karşılaştırmayı sağlıyor. Özellikle dilbilimciler, araştırmacılar ve öğrencilerin kelimelerin <br>anlamlarındaki varyasyonları inceleyip analiz etmelerine yardımcı olacak.
 
 
 
