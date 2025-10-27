@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>SÖZLÜK KARŞILAŞTIRMA</h1>
+
+
+        <form class="containerbutton" action="{{ url_for('result') }}" method="POST">
+            <div class="containerb1">
+                <div class="containerh2">
+                    <h2>{{sonuc}}</h2>
+                </div>
+                <div>
+                    <input type="text" class="input1" name="girilen" id="i3" placeholder="Sözlükte Ara">
+                    <button type="submit" class="button1">Ara</button>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="container3">
+           <table>
+            <thead>
+               <tr>
+                <th>TDK Sözlüğü</th>
+                <th>Kubbealtı Sözlüğü</th>
+               </tr>
+            </thead>
+
+             <tbody>
+               {% for tdk, kubbe in anlamlar %}
+                <tr class="hizalama">
+                    <td class="solhucre"><li class="liste">{{ tdk }}</li></td>
+                    <td class="saghucre"><li class="liste">{{ kubbe }}</li></td>
+                </tr>
+                {% endfor %}
+             </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
