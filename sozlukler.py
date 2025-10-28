@@ -47,7 +47,7 @@ def kubbealtiSozluk(kelime):
     response = requests.get(url, headers=headers)
     data = response.text
 
-    pattern = re.compile(r"span class='ChampturkB150'\s?>\d\.\s</span><span\sclass='Champturk150'\s?>(.*?)[:.]")
+    pattern = re.compile(r'span class="ChampturkB150"\s?>\d\.\s</span><span\sclass="Champturk150"\s?>(.*?)[:.]')
 
     #pattern = re.compile(r"[(span class='ChampturkB150' >\d\.\s</span><span\sclass='Champturk150'\s?>(.*?)[:.])]|[(span class='ChampturkB150' >\d\.\s</span><span\sclass='Champturk150'\s>(.*?)[:.])")
 
