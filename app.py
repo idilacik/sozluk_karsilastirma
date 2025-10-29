@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import sozlukler
-from sozlukler import kubbealtiSozluk
+from itertools import zip_longest
 
 app = Flask(__name__)
 
@@ -9,19 +9,16 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 
-if __name__ =="_main_":
-    app.run(host='0.0.0.0', debug=True)
-@app.route('/result', methods=['POST',"GET"])
 
+@app.route('/result', methods=['POST',"GET"])
 def result():
     output = request.form
     kelime = output["girilen"].lower()
     tdkAnlamlar = sozlukler.tdkSozluk(kelime)
     kubbealtiAnlamlar = sozlukler.kubbealtiSozluk(kelime)
-    from itertools import zip_longest
     anlamlar = list(zip_longest(tdkAnlamlar, kubbealtiAnlamlar, fillvalue=""))
 
-
-
-
     return render_template("index.html", sonuc = kelime, anlamlar=anlamlar,)
+
+if __name__ =="__main__":
+    app.run(host='0.0.0.0', debug=True)
