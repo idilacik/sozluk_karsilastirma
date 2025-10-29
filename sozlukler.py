@@ -15,7 +15,7 @@ def tdkSozluk(kelime):
         }
     )
 
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=10, verify=False)
     data = response.text
 
 
@@ -44,7 +44,7 @@ def kubbealtiSozluk(kelime):
         }
     )
 
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=10, verify=False)
     data = response.text
 
     pattern = re.compile(r'<span class=\\"ChampturkB150\\">\d. </span><span class=\\"Champturk150\\">(.*?)[:.]')
